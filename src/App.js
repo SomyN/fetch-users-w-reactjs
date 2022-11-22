@@ -36,8 +36,10 @@ class App extends React.Component {
 				items.map((item) => (
           <div className="text-1xl box-border w-100 flex flex-row gap-20 justify-center text-center items-center" key={item.id}>
             <div className="p-5 rounded-md shadow-2xl">
-              <p className="card-text f-3 border-solid">Username: { item.username }</p> 
-				      <p className="border-solid">User email: { item.email } </p>
+              		<p className="card-text f-3 border-solid">Username: { item.username }</p> 
+					<p className="border-solid">User email: {item.email} </p>
+					<p className="border-solid">Official website: {item.website}</p>
+              		<p className="border-solid">Phone number: {item.phone} </p>
             </div>
 					</div>
 				))
